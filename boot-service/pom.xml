@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>start.boot.com</artifactId>
+        <groupId>boot-start</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>boot-service</artifactId>
+
+    <dependencies>
+
+        <!-- spring boot duboo relation -->
+        <!-- &lt;!&ndash; boot start dependency &ndash;&gt;
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-web</artifactId>
+         </dependency>
+
+         &lt;!&ndash; hot dependency &ndash;&gt;
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-devtools</artifactId>
+             <optional>true</optional>
+         </dependency>
+
+         <dependency>
+             <groupId>com.alibaba</groupId>
+             <artifactId>dubbo</artifactId>
+             <version>2.5.3</version>
+             <exclusions>
+                 <exclusion>
+                     <artifactId>spring</artifactId>
+                     <groupId>org.springframework</groupId>
+                 </exclusion>
+             </exclusions>
+         </dependency>
+
+         <dependency>
+             <groupId>org.apache.zookeeper</groupId>
+             <artifactId>zookeeper</artifactId>
+             <version>3.4.6</version>
+         </dependency>
+         <dependency>
+             <groupId>com.github.sgroschupf</groupId>
+             <artifactId>zkclient</artifactId>
+             <version>0.1</version>
+         </dependency>
+
+ -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>${org.mapstruct.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-jdk8</artifactId>
+            <version>${org.mapstruct.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <version>${org.mapstruct.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- local dependency -->
+        <dependency>
+            <groupId>boot-start</groupId>
+            <artifactId>boot-repository</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>boot-start</groupId>
+            <artifactId>boot-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <!-- spring boot duboo relation -->
+            <!--<plugin>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--<version>1.4.0.RELEASE</version>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<goals>-->
+            <!--<goal>repackage</goal>-->
+            <!--</goals>-->
+            <!--</execution>-->
+            <!--</executions>-->
+            <!--</plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <annotationProcessors>
+                        <annotationProcessor>org.mapstruct.ap.MappingProcessor</annotationProcessor>
+                    </annotationProcessors>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+</project>

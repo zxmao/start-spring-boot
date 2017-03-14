@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/boot-api/boot-api.iml" filepath="$PROJECT_DIR$/boot-api/boot-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-common/boot-common.iml" filepath="$PROJECT_DIR$/boot-common/boot-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-dto/boot-dto.iml" filepath="$PROJECT_DIR$/boot-dto/boot-dto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-repository/boot-repository.iml" filepath="$PROJECT_DIR$/boot-repository/boot-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-service/boot-service.iml" filepath="$PROJECT_DIR$/boot-service/boot-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-util/boot-util.iml" filepath="$PROJECT_DIR$/boot-util/boot-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/start-boot.iml" filepath="$PROJECT_DIR$/start-boot.iml" />
+    </modules>
+  </component>
+</project>
